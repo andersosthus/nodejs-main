@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
   res.end('This server has been running for ' + elapsedTime + 'ms.\n');
 });
 
-var port = process.env.POST || 5000;
+var port = 5000;
 server = app.listen(port);
 
 console.log('Server listening on port %d in %s mode', server.address().port, app.settings.env);
